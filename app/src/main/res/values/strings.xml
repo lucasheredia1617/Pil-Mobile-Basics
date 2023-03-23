@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">pil-mobile-basics</string>
+    <string name="AppName">Pil Mobile Basics</string>
+    <string name="TitleCounter">Contador</string>
+    <string name="ResetButton">Resetear</string>
+    <string name="IncreaseButton">Incrementar</string>
+    <string name="DecreaseButton">Decrementar</string>
 </resources>

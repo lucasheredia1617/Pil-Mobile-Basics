@@ -4,15 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.MainActivity">
+    tools:context=".activity.MainActivity"
+    android:background="@color/background">
 
     <TextView
+        android:id="@+id/AppName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/AppName"
+        android:textSize="@dimen/textview_height_title"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TitleCounter"
+        android:textSize="@dimen/textview_height"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:layout_marginBottom="@dimen/margin_editext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:text="@string/ResetButton"
+        android:textSize="@dimen/textsize_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="@dimen/margin_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Counter"
+        android:layout_width="@dimen/width_button"
+        android:layout_height="@dimen/height_button"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:text="@string/IncreaseButton"
+        android:textSize="@dimen/textsize_button"
+        app:layout_constraintEnd_toEndOf="@id/button3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/button1"
+        app:layout_constraintTop_toTopOf="@id/Counter"
+        android:layout_width="@dimen/width_button"
+        android:layout_height="@dimen/height_button"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:text="@string/DecreaseButton"
+        android:textSize="@dimen/textsize_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="@dimen/margin_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Counter"
+        android:layout_width="@dimen/width_button"
+        android:layout_height="@dimen/height_button"/>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
