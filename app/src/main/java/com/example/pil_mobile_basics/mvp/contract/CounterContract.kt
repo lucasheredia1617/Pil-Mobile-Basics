@@ -14,7 +14,9 @@ interface CounterContract {
         fun onClickButtonToDecrement(onClick: () -> Unit)
         fun onClickButtonToReset(onClick: () -> Unit)
         fun getInput(): Int
+        fun countOnZero(): Boolean
         fun verifyInput(): Boolean
+        fun failedInput()
         fun showCountReset()
     }
 
