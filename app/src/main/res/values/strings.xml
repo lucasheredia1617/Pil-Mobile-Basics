@@ -4,4 +4,7 @@
     <string name="ResetButton">Resetear</string>
     <string name="IncreaseButton">Incrementar</string>
     <string name="DecreaseButton">Decrementar</string>
+    <string name="Number">Escribir numero</string>
+    <string name="Empty">Rellenar con un valor</string>
+    <string name="Reset">El contador ya esta en 0</string>
 </resources>
